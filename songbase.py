@@ -7,7 +7,7 @@ def index():
     return '<h1>hello world !!!</h1>'
 
 
-@app.route('/users')
+@app.route('/user/<string:name>/')
 def get_users(name):
     return 'hello %s your age is %d' % (name, 3)
 
