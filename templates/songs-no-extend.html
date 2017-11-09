@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Songbase</title>
+  </head>
+  <body>
+    {# this is jinja comments #}
+    <h1>This is the song list: </h1>
+        <ul>
+           {% for song in songs %}
+           <li>{{song}} </li>
+          {% endfor %}
+        </ul>
+        <img src="{{url_for('static', filename='img/google.png')}}" alt="Google"/>
+  </body>
+</html>
