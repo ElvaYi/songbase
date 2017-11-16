@@ -1,0 +1,14 @@
+{% extends "base.html"%}
+
+{% block title %}
+All Songs
+{% endblock %}
+
+{% block page_content%}
+  <h1> This page shows all songs </h1>
+  {% for artist in artists %}
+  <h3>{{artist.name}}</h3>
+  <p>{{artist.year}}</p>
+  <p>{{song.artist.name}}</p>
+  {% endfor %}
+{% endblock%}

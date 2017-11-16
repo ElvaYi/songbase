@@ -1,0 +1,13 @@
+{% extends "base.html"%}
+
+{% block title %}
+All Artists
+{% endblock %}
+
+{% block page_content%}
+  <h1> This is the index page using template interitance </h1>
+  {% for artist in artists %}
+  <h3>{{artist.name}}</h3>
+  <p>{{artist.about}}</p>
+  {% endfor %}
+{% endblock%}
